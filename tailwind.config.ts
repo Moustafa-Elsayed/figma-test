@@ -19,14 +19,16 @@ module.exports = {
       },
       colors: {
         text_yellow: "#FF951D",
-        ligh_tText: "#828282",
+        light_Text: "#828282",
         text_black: "#333333",
         card_bg: "#FFF5E9",
+        sub_title:"#4F4F4F",
       },
       fontSize: {
         'title': '24px', 
         'sub_title': '12px', 
         'body': '16px', 
+        "main_title":"14px"
         
       },
       fontWeight: {
