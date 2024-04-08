@@ -53,7 +53,14 @@ const Product = () => {
             <div className="flex-1">
               <div className="flex justify-between items-center">
                 <div>{items.title}</div>
-                <div>heart</div>
+                <Image
+                src={items.heart}
+                alt="logo"
+                className="rounded-3xl "
+                width={20}
+                height={17}
+              />
+                
               </div>
               <div className="flex justify-start items-center">
                 <div>starting price</div>

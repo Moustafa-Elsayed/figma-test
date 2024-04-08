@@ -8,6 +8,7 @@ interface CardItem {
   number: string;
   data: string;
   rate: string;
+ 
 }
 
 const cardData: CardItem[] = [
@@ -18,6 +19,7 @@ const cardData: CardItem[] = [
     number: "5",
     data: "Following",
     rate: "",
+    
   },
   {
     id: "2",
@@ -26,14 +28,16 @@ const cardData: CardItem[] = [
     number: "20",
     data: "Followers",
     rate: "",
+
   },
   {
     id: "3",
-    img: "https://svgshare.com/i/15Ak.svg",
+    img: "https://svgshare.com/i/15Ae.svg",
     alt: "logo",
     number: "4.2",
     data: "Rate",
     rate: "(15)",
+
   },
 ];
 

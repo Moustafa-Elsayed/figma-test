@@ -7,6 +7,8 @@ type Product = {
   days: number;
   hours: number;
   minutes: number;
+  heart:string;
+  
 };
 
 export const productData: Product[] = [
@@ -19,6 +21,7 @@ export const productData: Product[] = [
     days: 2,
     hours: 10,
     minutes: 50,
+    heart:"https://svgshare.com/i/15Bt.svg"
   },
   {
     id: 2,
@@ -29,6 +32,8 @@ export const productData: Product[] = [
     days: 2,
     hours: 10,
     minutes: 50,
+    heart:"https://svgshare.com/i/15Bt.svg"
+
   },
   {
     id: 3,
@@ -39,6 +44,8 @@ export const productData: Product[] = [
     days: 2,
     hours: 10,
     minutes: 50,
+    heart:"https://svgshare.com/i/15Ae.svg"
+
   },
   {
     id: 4,
@@ -49,6 +56,8 @@ export const productData: Product[] = [
     days: 2,
     hours: 10,
     minutes: 50,
+    heart:"https://svgshare.com/i/15Bt.svg"
+
   },
   
 ];
