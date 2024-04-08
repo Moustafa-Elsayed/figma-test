@@ -28,13 +28,16 @@ module.exports = {
         'title': '24px', 
         'sub_title': '12px', 
         'body': '16px', 
-        "main_title":"14px"
+        "main_title":"14px",
+        "header":"32px",
         
       },
       fontWeight: {
         'normal': 400,
         'medium': 500,
         'bold': 700,
+        'extrabold': 800,
+
       
       },
 
