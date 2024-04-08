@@ -35,7 +35,7 @@ const Header = () => {
                 />
               </Link>
             </div>
-            <ul className="flex flex-row gap-5 items-center">
+            {/* <ul className="flex flex-row gap-5 items-center">
               {navLinks.map((item, index) => {
                 return (
                   <li key={index}>
@@ -48,7 +48,32 @@ const Header = () => {
                   </li>
                 );
               })}
-            </ul>
+            </ul> */}
+            <div className="hidden md:block">
+              <ul className="flex space-x-4">
+                <li className="border-b border-2 border-red-400 h-full" >
+                  <Link href="/" className="text-[#D20653]  ">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/about"
+                    className="text-black "
+                  >
+                    Blog
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/services"
+                    className="text-black "
+                  >
+                    Gifts
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
 
           {/* Mobile Menu Button (Hamburger) */}
@@ -71,10 +96,10 @@ const Header = () => {
             </button>
           </div>
         </div>
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center ">
           <div className="flex flex-row justify-center items-center gap-3">
-            <div className="flex items-center">
-              <div className="border-r border-yellow-500 ">
+            <div className="flex items-center justify-between gap-[32px]">
+              <div className="border-r border-yellow-500 pr-[24px] ">
                 <Link href={"/"}>
                   <Image
                     src={"https://svgshare.com/i/159j.svg"}
@@ -85,8 +110,7 @@ const Header = () => {
                   />
                 </Link>
               </div>
-              <div className="border-r border-yellow-500 ">
-                {" "}
+              <div className="border-r border-yellow-500 pr-[24px] ">
                 <Link href={"/"}>
                   <Image
                     src={"https://svgshare.com/i/15B5.svg"}
@@ -98,23 +122,35 @@ const Header = () => {
                 </Link>
               </div>
 
-              <div className="border-r border-yellow-500 ">
-                {" "}
-                <Link href={"/"}>
-                  <Image
-                    src={"https://svgshare.com/i/15BS.svg"}
-                    alt="logo"
-                    className=" text-black drak:text-white"
-                    width={24}
-                    height={24}
-                  />
-                </Link>
-              </div>
+              <Link href={"/"}>
+                <Image
+                  src={"https://svgshare.com/i/15BS.svg"}
+                  alt="logo"
+                  className=" text-black drak:text-white"
+                  width={24}
+                  height={24}
+                />
+              </Link>
 
-              <button>sjhjsfh</button>
-              <div>
-                <div>icon</div>
-                <div>icon</div>
+              <button className="flex flex-row justify-evenly items-center bg-gradient-to-r from-red-600 to-yellow-400 w-[172px] h-[40px] rounded-lg">
+                <Image
+                  src={"https://svgshare.com/i/159k.svg"}
+                  alt="logo"
+                  className=" text-black drak:text-white"
+                  width={24}
+                  height={24}
+                />
+                <p className="text-white">Add new product</p>
+              </button>
+              <div className="flex flex-row justify-between items-center gap-2">
+                <Image
+                  src={"https://svgshare.com/i/15AQ.svg"}
+                  alt="logo"
+                  className=" text-black drak:text-white border-r border-gray-500 pr-1 "
+                  width={24}
+                  height={24}
+                />
+                <div className="">EN</div>
               </div>
             </div>
           </div>
