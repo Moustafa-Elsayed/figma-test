@@ -3,7 +3,7 @@ import React from "react";
 
 const ProfileData = () => {
   return (
-    <div className="bg-white p-4">
+    <div className="bg-white p-4 flex flex-col items-start gap-[16px] rounded-2xl w-[407px]">
       <Image
         src={"https://svgshare.com/i/15AC.svg"}
         alt="logo"
@@ -33,7 +33,7 @@ const ProfileData = () => {
         </div>
         <div className="bg-card_bg p-3 rounded-[18px] flex flex-row  justify-center items-center gap-2">
           <Image
-            src={"https://svgshare.com/i/15Ak.svg"}
+            src={"https://svgshare.com/i/15A4.svg"}
             alt="logo"
             className="text-black "
             width={24}
@@ -46,7 +46,7 @@ const ProfileData = () => {
         </div>
         <div className="bg-card_bg p-3 rounded-[18px] flex flex-row  justify-center items-center gap-2">
           <Image
-            src={"https://svgshare.com/i/15Ak.svg"}
+            src={"https://svgshare.com/i/15Ab.svg"}
             alt="logo"
             className="text-black "
             width={24}
@@ -58,7 +58,9 @@ const ProfileData = () => {
           </div>
         </div>
       </div>
-      <button className="bg-gradient-to-r from-red-600 to-yellow-400 w-full p-2 rounded-md text-white">follow</button>
+      <button className="bg-gradient-to-r from-red-600 to-yellow-400 w-full p-2 rounded-xl text-white">
+        follow
+      </button>
     </div>
   );
 };

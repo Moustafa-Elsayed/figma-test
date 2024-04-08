@@ -21,8 +21,21 @@ module.exports = {
         text_yellow: "#FF951D",
         ligh_tText: "#828282",
         text_black: "#333333",
-        card_bg:"#FFF5E9",
+        card_bg: "#FFF5E9",
       },
+      fontSize: {
+        'title': '24px', 
+        'sub_title': '12px', 
+        'body': '16px', 
+        
+      },
+      fontWeight: {
+        'normal': 400,
+        'medium': 500,
+        'bold': 700,
+      
+      },
+
       fontFamily: {
         bodyFont: ["Nunito", ""],
       },

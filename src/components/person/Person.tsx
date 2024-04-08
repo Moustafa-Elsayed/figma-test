@@ -1,15 +1,16 @@
 import React from "react";
 import Link from "next/link";
 import ProfileData from "./ProfileData";
+import QrCode from "./QrCode";
 
 const Person = () => {
   return (
-    <div className="max-w-screen-2xl mx-auto  grid lgl:grid-cols-5 gap-10 py-4">
+    <div className="max-w-screen-2xl mx-auto grid lgl:grid-cols-6 gap-2 py-4">
       <div className=" col-span-6 lgl:col-span-1 p-4 rounded-lg flex flex-col gap-7 items-center justify-center">
         <ProfileData />
-       
+        <QrCode />
       </div>
-      <div className="bg-white col-span-6 lgl:col-span-4 p-4 rounded-lg">
+      {/* <div className="bg-white col-span-6 lgl:col-span-4 p-4 rounded-lg">
         <div className="flex items-center justify-between border-b-[1px] border-b-gray-400 pb-1">
           <p className="text-2xl font-semibold text-amazon_blue">
             Shopping Cart
@@ -23,7 +24,7 @@ const Person = () => {
             </button>
           </Link>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
