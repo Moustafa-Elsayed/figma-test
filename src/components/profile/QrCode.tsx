@@ -43,13 +43,13 @@ function QrCode() {
           Download the QR code or share it with your friends.
         </p>
       </div>
-      <div className="w-[358px] h-[313px] bg-white border-[22px]  border-red-400 rounded-2xl ">
-        <div className="bg-white   flex flex-col justify-between items-center gap-2">
+      <div className="w-[358px] h-[313px] bg-gray-500 flex justify-center items-center bg-gradient-to-r from-[#D20653] to-[#FF951D] rounded-2xl ">
+        <div className="p-2 flex flex-col justify-between w-[313px] h-[278px] items-center rounded-3xl bg-white ">
           <Link href={"/"}>
             <Image
               src={"https://svgshare.com/i/158f.svg"}
               alt="logo"
-              className=" text-black drak:text-white"
+              className=""
               width={152}
               height={48}
             />

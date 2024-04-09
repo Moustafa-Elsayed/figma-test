@@ -44,7 +44,7 @@ const Header = () => {
                     >
                       Home
                     </Link>
-                    <div className="absolute border-b-8  border-[#D20653] w-full -bottom-5 rounded-3xl"></div>
+                    <div className="absolute border-b-[10px]  border-[#D20653] w-full -bottom-5 rounded-3xl"></div>
                   </li>
                   <li>
                     <Link
@@ -98,12 +98,12 @@ const Header = () => {
                     src={"https://svgshare.com/i/15BS.svg"}
                     alt="logo"
                     className=" text-black drak:text-white"
-                    width={24}
-                    height={24}
+                    width={40}
+                    height={40}
                   />
                 </Link>
 
-                <button className=" hidden md:flex flex-row justify-evenly items-center bg-gradient-to-r from-red-600 to-yellow-400 w-[172px] h-[40px] rounded-lg">
+                <button className=" hidden md:flex flex-row justify-evenly items-center bg-gradient-to-r from-[#D20653] to-[#FF951D] w-[172px] h-[40px] rounded-lg">
                   <Image
                     src={"https://svgshare.com/i/159k.svg"}
                     alt="logo"

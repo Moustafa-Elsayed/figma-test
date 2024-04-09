@@ -45,7 +45,7 @@ const cardData: CardItem[] = [
 
 const ProfileData = () => {
   return (
-    <div className="bg-white p-4 flex flex-col items-start gap-[16px] rounded-2xl w-[407px]">
+    <div className="bg-white p-4 flex flex-col items-start gap-[16px] rounded-2xl w-[407px] mb-5">
       <Image
         src={"https://svgshare.com/i/15AC.svg"}
         alt="logo"
@@ -80,7 +80,7 @@ const ProfileData = () => {
           </div>
         ))}
       </div>
-      <button className="bg-gradient-to-r from-red-600 to-yellow-400 w-full p-2 rounded-xl text-white font-bold">
+      <button className="bg-gradient-to-r from-[#D20653] to-[#FF951D] w-full p-2 rounded-xl text-white font-bold">
         Follow
       </button>
     </div>

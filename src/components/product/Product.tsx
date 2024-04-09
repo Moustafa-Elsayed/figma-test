@@ -18,7 +18,7 @@ const Product = () => {
               Reviews
             </button>
           </div>
-          <button className="flex flex-row justify-evenly items-center bg-gradient-to-r from-red-600 to-yellow-400 w-[125px] h-[40px] rounded-lg">
+          <button className="flex flex-row justify-evenly items-center bg-gradient-to-r from-[#D20653] to-[#FF951D]  w-[125px] h-[40px] rounded-lg">
             <Image
               src={"https://svgshare.com/i/159k.svg"}
               alt="logo"
@@ -29,7 +29,7 @@ const Product = () => {
             <p className="text-white">Add Review</p>
           </button>
         </div>
-        <div className="flex flex-row  items-center gap-2">
+        <div className="flex flex-row  items-center gap-2 mt-4 mb-4">
           <p className="font-extrabold text-header">Products </p>
           <span className="text-main_title text-light_Text">( 12 )</span>
         </div>
