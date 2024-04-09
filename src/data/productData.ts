@@ -74,5 +74,19 @@ export const productData: Product[] = [
     heart:"https://svgshare.com/i/15Bt.svg"
 
   },
-  
+  {
+    id: 5,
+    img: "https://svgshare.com/i/15Bq.svg",
+    imgTitle: "Live auction",
+    title: "Six-piece clothing set (blouse - pants - hat and ...",
+     price: "1000 EGP",
+    daysNumber: 2,
+    days:"Days",
+    hours:"Hours",
+    minutes:"Hours",
+    hoursNumber: 10,
+    minutesNumber: 50,
+    heart:"https://svgshare.com/i/15Bt.svg"
+
+  },
 ];

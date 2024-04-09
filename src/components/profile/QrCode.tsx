@@ -44,7 +44,7 @@ function QrCode() {
         </p>
       </div>
       <div className="w-[358px] h-[313px] bg-white border-[22px]  border-red-400 rounded-2xl ">
-        <div className="bg-white  flex flex-col justify-between items-center gap-2">
+        <div className="bg-white   flex flex-col justify-between items-center gap-2">
           <Link href={"/"}>
             <Image
               src={"https://svgshare.com/i/158f.svg"}
@@ -62,7 +62,9 @@ function QrCode() {
             width={135}
             height={135}
           />
-          <div className="font-normal text-main_title text-[#363333]">Follow Us on Mazaady</div>
+          <div className="font-normal text-main_title text-[#363333]">
+            Follow Us on Mazaady
+          </div>
         </div>
       </div>
     </div>

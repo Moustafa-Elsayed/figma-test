@@ -38,7 +38,7 @@ const Product = () => {
             key={items.id}
             className="flex justify-start items-start gap-3 p-3"
           >
-            <div className="relative ">
+            <div className="relative overflow-hidden  ">
               <Image
                 src={items.img}
                 alt="logo"
@@ -46,7 +46,7 @@ const Product = () => {
                 width={145}
                 height={127}
               />
-              <div className="text-white text-sub_title font-normal rounded-tr-none rounded-br-[100px] rounded-tl-[100px] rounded-bl-none flex justify-center items-center  absolute bottom-0 -right-0 bg-yellow-300 w-[114px] h-[37px]">
+              <div className="text-white text-sub_title font-normal rounded-tr-none rounded-br-[75px] rounded-tl-[100px] rounded-bl-none flex justify-center items-center  absolute bottom-0 -right-0 bg-yellow-300 w-[114px] h-[37px]">
                 {items.imgTitle}
               </div>
             </div>
@@ -95,29 +95,6 @@ const Product = () => {
           </div>
         ))}
         <div>
-          {/* <div className="flex justify-start items-center gap-2 p-3">
-            <Image
-              src={"https://svgshare.com/i/15Bq.svg"}
-              alt="logo"
-              className="rounded-3xl "
-              width={145}
-              height={127}
-            />
-            <div className="flex-1">
-              <div className="flex justify-between items-center">
-                <div>tiltle</div>
-                <div>heart</div>
-              </div>
-              <div className="flex justify-start items-center">
-                <div>subtitle</div>
-                <div>ni=umber</div>
-              </div>
-              <div className="flex justify-start items-center">
-                <div>title</div>
-                <div>3 btn</div>
-              </div>
-            </div>
-          </div> */}
         </div>
       </div>
     </>
