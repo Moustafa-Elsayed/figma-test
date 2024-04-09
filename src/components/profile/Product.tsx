@@ -46,9 +46,19 @@ const Product = () => {
                 width={145}
                 height={127}
               />
-              <div className="text-white text-sub_title font-normal rounded-tr-none rounded-br-[75px] rounded-tl-[100px] rounded-bl-none flex justify-center items-center  absolute bottom-0 -right-0 bg-yellow-300 w-[114px] h-[37px]">
+              {/* <div className="text-white text-sub_title font-normal rounded-tr-none rounded-br-[75px] rounded-tl-[100px] rounded-bl-none flex justify-center items-center  absolute bottom-0 -right-0 bg-yellow-300 w-[114px] h-[37px]">
                 {items.imgTitle}
-              </div>
+              </div> */}
+
+              {items.imgTitle === "Live" ? (
+                <div className="text-white text-sub_title font-normal rounded-tr-none rounded-br-[75px] rounded-tl-[100px] rounded-bl-none flex justify-center items-center  absolute bottom-0 -right-0 bg-[#D20653] w-[114px] h-[37px]">
+                  Live auction
+                </div>
+              ) : (
+                <div className="text-white text-sub_title font-normal rounded-tr-none rounded-br-[75px] rounded-tl-[100px] rounded-bl-none flex justify-center items-center  absolute bottom-0 -right-0 bg-[#FF951D] w-[114px] h-[37px]">
+                  hot sale
+                </div>
+              )}
             </div>
 
             <div className="flex flex-col flex-1  gap-4">
@@ -94,8 +104,8 @@ const Product = () => {
             </div>
           </div>
         ))}
-        <div>
-        </div>
+
+        <div></div>
       </div>
     </>
   );

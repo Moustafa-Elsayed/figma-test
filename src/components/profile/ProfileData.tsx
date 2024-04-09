@@ -8,6 +8,7 @@ interface CardItem {
   number: string;
   data: string;
   rate: string;
+  
  
 }
 
@@ -19,6 +20,7 @@ const cardData: CardItem[] = [
     number: "5",
     data: "Following",
     rate: "",
+    
     
   },
   {
