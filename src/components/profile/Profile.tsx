@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import ProfileData from "./ProfileData";
 import QrCode from "./QrCode";
 import Product from "../product/Product";
@@ -19,4 +19,4 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export default memo(Profile) ;

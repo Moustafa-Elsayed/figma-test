@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 interface ButtonProps {
     borderColor: string;
     textColor: string;
@@ -8,11 +8,11 @@ interface ButtonProps {
   const ProductButton: React.FC<ButtonProps> = ({ borderColor, textColor, text,backgroundColor }) => {
     return (
       <button
-        className={`border border-${borderColor} rounded-2xl bg-${backgroundColor} text-${textColor} w-[108px] h-[35px] font-bold text-main_title`}
+        className={`border border-${borderColor} rounded-2xl bg-${backgroundColor} text-${textColor} min-w-[97px]  max-w-[108px] h-[35px] font-bold text-main_title`}
       >
         {text}
       </button>
     );
   };
 
-export default ProductButton
+export default memo(ProductButton) 

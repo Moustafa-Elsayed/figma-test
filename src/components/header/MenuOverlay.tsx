@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { memo } from "react";
 
 interface MenuOverlayProps {
   setNavBarOpen: (open: boolean) => void;
@@ -12,7 +12,7 @@ const MenuOverlay: React.FC<MenuOverlayProps> = ({
   navBarOpen,
 }) => {
   return (
-    <div className="absolute top-16 left-0 w-full bg-white border-b border-gray-200 border-t border-t-gray-200-50  ">
+    <div className={`absolute top-16 left-0 w-full bg-white border-b border-gray-200 border-t border-t-gray-200-50 transition-all duration-50000 ${navBarOpen ? 'menu-open' : 'menu-closed'}`}>
       <button
         onClick={() => setNavBarOpen(!navBarOpen)}
         className="absolute top-0 right-10 text-2xl "
@@ -20,7 +20,6 @@ const MenuOverlay: React.FC<MenuOverlayProps> = ({
         X
       </button>
       <div className="flex flex-col justify-center items-center gap-3 mt-9">
-        
         <ul className="flex flex-col space-y-2 px-4 py-2">
           <li>
             <Link href="/" className="text-[#D20653] font-bold text-sub_header">
@@ -45,17 +44,17 @@ const MenuOverlay: React.FC<MenuOverlayProps> = ({
           <Image
             src={"https://svgshare.com/i/159k.svg"}
             alt="logo"
-            className=" text-black drak:text-white"
+            className=" text-black dark:text-white"
             width={24}
             height={24}
           />
           <p className="text-white">Add new product</p>
         </button>
-        <div className=" flex-row justify-center items-center gap-2 flex">
+        <div className="flex-row justify-center items-center gap-2 flex">
           <Image
             src={"https://svgshare.com/i/15AQ.svg"}
             alt="logo"
-            className=" text-black drak:text-white border-r border-gray-500 pr-1 "
+            className=" text-black dark:text-white border-r border-gray-500 pr-1 "
             width={24}
             height={24}
           />
@@ -66,4 +65,4 @@ const MenuOverlay: React.FC<MenuOverlayProps> = ({
   );
 };
 
-export default MenuOverlay;
+export default memo(MenuOverlay);

@@ -7,3 +7,11 @@
     background: linear-gradient(to right,rgba(210, 6, 83, 1)
     , rgba(255, 149, 29, 1));;
   }
+  .menu-open {
+    height: auto;
+  }
+  
+  .menu-closed {
+    height: 0;
+    overflow: hidden;
+  }

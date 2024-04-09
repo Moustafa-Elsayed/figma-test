@@ -62,19 +62,19 @@ const ProfileData = () => {
       <div className="flex flex-row justify-between items-center gap-4 ">
         {cardData.map((items) => (
           <div
-            key={items.id}
-            className="bg-card_bg w-[108px] p-3 rounded-[18px] flex flex-row  justify-center items-center gap-2"
+            key={items?.id}
+            className="bg-card_bg  p-3 rounded-[18px] flex flex-row  justify-center items-center gap-2"
           >
-            <Image src={items.img} alt="logo" width={24} height={24} />
+            <Image src={items?.img} alt="logo" width={24} height={24} />
             <div className="flex flex-col justify-center items-start">
               <div>
                 <span className="text-black font-bold text-main_title">
-                  {items.number}
+                  {items?.number}
                 </span>
-                <span className="text-[10px] ml-2 ">{items.rate}</span>
+                <span className="text-[10px] md:ml-2 ml-1 ">{items?.rate}</span>
               </div>
               <div className="text-text_yellow font-normal text-sub_title">
-                {items.data}
+                {items?.data}
               </div>
             </div>
           </div>

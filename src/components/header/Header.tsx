@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { memo, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import NavLink from "./NavLink";
@@ -9,7 +9,7 @@ const Header = () => {
 
 
   return (
-    <nav className="bg-white h-[68px] p-4 overflow-hidden">
+    <nav className="bg-white h-[68px] p-4 overflow-hidden ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="mx-auto flex flex-row justify-between items-center">
           <div className="flex justify-between items-center">
@@ -49,4 +49,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default memo(Header) ;

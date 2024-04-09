@@ -1,7 +1,7 @@
-import { productData } from "@/components/product/productData";
 import Image from "next/image";
-import React from "react";
+import React, { memo } from "react";
 import ProductButton from "./ProductButton";
+import ProductCard from "./ProductCard";
 
 const Product = () => {
   return (
@@ -43,77 +43,10 @@ const Product = () => {
           <p className="font-extrabold text-header">Products </p>
           <span className="text-main_title text-light_Text">( 12 )</span>
         </div>
-        {productData.map((items) => (
-          <div
-            key={items.id}
-            className="flex justify-start items-start gap-3 p-3"
-          >
-            <div className="relative overflow-hidden  ">
-              <Image
-                src={items.img}
-                alt="logo"
-                className="rounded-3xl "
-                width={145}
-                height={127}
-              />
-              {items.imgTitle === "Live" ? (
-                <div className="text-white text-sub_title font-normal rounded-tr-none rounded-br-[75px] rounded-tl-[100px] rounded-bl-none flex justify-center items-center  absolute bottom-0 -right-0 bg-[#D20653] w-[114px] h-[37px]">
-                  Live auction
-                </div>
-              ) : (
-                <div className="text-white text-sub_title font-normal rounded-tr-none rounded-br-[75px] rounded-tl-[100px] rounded-bl-none flex justify-center items-center  absolute bottom-0 -right-0 bg-[#FF951D] w-[114px] h-[37px]">
-                  hot sale
-                </div>
-              )}
-            </div>
-
-            <div className="flex flex-col flex-1  gap-2">
-              <div className="flex justify-between items-center">
-                <div className="text-sub_header font-normal">{items.title}</div>
-                <Image
-                  src={
-                    items.heart === "heart"
-                      ? "https://svgshare.com/i/15Ae.svg"
-                      : "https://svgshare.com/i/15Bt.svg"
-                  }
-                  alt="logo"
-                  className="rounded-3xl"
-                  width={20}
-                  height={17}
-                />
-              </div>
-              <div className="flex justify-start items-center gap-2">
-                <div className="text-light_Text font-normal">
-                  starting price
-                </div>
-                <div className=" text-sub_header font-bold">{items.price}</div>
-              </div>
-              <div className="flex justify-start items-center gap-2">
-                <div className="text-light_Text font-normal">Lot starts in</div>
-                <div className="flex flex-row gap-3">
-                  {[
-                    { number: items.daysNumber, label: items.days },
-                    { number: items.hoursNumber, label: items.hours },
-                    { number: items.minutesNumber, label: items.minutes },
-                  ].map((item, index) => (
-                    <button
-                      key={index}
-                      className="w-[105px] h-[40px] text-sub_header rounded-3xl font-bold bg-card_bg text-text_yellow flex justify-center items-center gap-1"
-                    >
-                      {item.number}
-                      <span className="text-text_yellow text-main_title">
-                        {item.label}
-                      </span>
-                    </button>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        ))}
+        <ProductCard />
       </div>
     </>
   );
 };
 
-export default Product;
+export default memo(Product) ;
