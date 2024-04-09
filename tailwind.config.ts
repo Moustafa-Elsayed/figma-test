@@ -30,6 +30,7 @@ module.exports = {
         'body': '16px', 
         "main_title":"14px",
         "header":"32px",
+        "sub_header":"18px"
         
       },
       fontWeight: {

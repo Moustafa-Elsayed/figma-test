@@ -32,7 +32,7 @@ const cardData: CardItem[] = [
   },
   {
     id: "3",
-    img: "https://svgshare.com/i/15Ae.svg",
+    img: "https://svgshare.com/i/15Ab.svg",
     alt: "logo",
     number: "4.2",
     data: "Rate",

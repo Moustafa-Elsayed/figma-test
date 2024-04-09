@@ -19,8 +19,8 @@ const navLinks = [
 
 const Header = () => {
   return (
-    <nav className="bg-white w-full h-[68px] p-4">
-      <div className=" mx-auto flex flex-row justify-between items-center">
+    <nav className="bg-white w-full h-[68px] p-4 ">
+      <div className=" mx-auto flex flex-row justify-between items-center px-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex flex-row justify-center items-center gap-3">
@@ -35,31 +35,20 @@ const Header = () => {
                 />
               </Link>
             </div>
-            {/* <ul className="flex flex-row gap-5 items-center">
-              {navLinks.map((item, index) => {
-                return (
-                  <li key={index}>
-                    <Link
-                      href={item.path}
-                      className={`block py-2 pl-3 pr-4 dark:text-black text-black sm:text-xl rounded md:p-0 hover:text-blue-400 dark:hover:text-yellow-400 font-semibold`}
-                    >
-                      {item.title}
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul> */}
             <div className="hidden md:block">
               <ul className="flex space-x-4">
-                <li className="border-b border-2 border-red-400 h-full" >
-                  <Link href="/" className="text-[#D20653]  ">
+                <li>
+                  <Link
+                    href="/"
+                    className="text-[#D20653] font-bold text-sub_header "
+                  >
                     Home
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="/about"
-                    className="text-black "
+                    className="text-light_Text text-sub_header font-normal"
                   >
                     Blog
                   </Link>
@@ -67,7 +56,7 @@ const Header = () => {
                 <li>
                   <Link
                     href="/services"
-                    className="text-black "
+                    className="text-light_Text text-sub_header "
                   >
                     Gifts
                   </Link>
@@ -75,8 +64,7 @@ const Header = () => {
               </ul>
             </div>
           </div>
-
-        
+          {/* Mobile Menu Button (Hamburger) */}
         </div>
         <div className="flex justify-between items-center ">
           <div className="flex flex-row justify-center items-center gap-3">
@@ -132,7 +120,7 @@ const Header = () => {
                   width={24}
                   height={24}
                 />
-                <div className="">EN</div>
+                <div className="font-bold text-sub_header">EN</div>
               </div>
             </div>
           </div>

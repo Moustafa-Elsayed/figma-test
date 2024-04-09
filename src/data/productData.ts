@@ -4,9 +4,12 @@ type Product = {
   img: string;
   imgTitle: string;
   price: string;
-  days: number;
-  hours: number;
-  minutes: number;
+  daysNumber: number;
+  days:string;
+  hoursNumber: number;
+  hours:string;
+  minutesNumber: number;
+  minutes:string;
   heart:string;
   
 };
@@ -18,9 +21,12 @@ export const productData: Product[] = [
     imgTitle: "Live auction",
     title: "Six-piece clothing set (blouse - pants - hat and ...",
      price: "1000 EGP",
-    days: 2,
-    hours: 10,
-    minutes: 50,
+    daysNumber: 2,
+    days:"Days",
+    hours:"Hours",
+    minutes:"Hours",
+    hoursNumber: 10,
+    minutesNumber: 50,
     heart:"https://svgshare.com/i/15Bt.svg"
   },
   {
@@ -29,9 +35,12 @@ export const productData: Product[] = [
     imgTitle: "Live auction",
     title: "Six-piece clothing set (blouse - pants - hat and ...",
     price: "1000 EGP",
-    days: 2,
-    hours: 10,
-    minutes: 50,
+    daysNumber: 2,
+    days:"Days",
+    hours:"Hours",
+    minutes:"Hours",
+    hoursNumber: 10,
+    minutesNumber: 50,
     heart:"https://svgshare.com/i/15Bt.svg"
 
   },
@@ -41,9 +50,12 @@ export const productData: Product[] = [
     imgTitle: "hot sale",
     title: "Jeep Car, new, used for only one time",
     price: "1000 EGP",
-    days: 2,
-    hours: 10,
-    minutes: 50,
+    daysNumber: 2,
+    days:"Days",
+    hours:"Hours",
+    minutes:"Hours",
+    hoursNumber: 10,
+    minutesNumber: 50,
     heart:"https://svgshare.com/i/15Ae.svg"
 
   },
@@ -53,9 +65,12 @@ export const productData: Product[] = [
     imgTitle: "Live auction",
     title: "Six-piece clothing set (blouse - pants - hat and ...",
     price: "1000 EGP",
-    days: 2,
-    hours: 10,
-    minutes: 50,
+    daysNumber: 2,
+    days:"Days",
+    hours:"Hours",
+    minutes:"Hours",
+    hoursNumber: 10,
+    minutesNumber: 50,
     heart:"https://svgshare.com/i/15Bt.svg"
 
   },
