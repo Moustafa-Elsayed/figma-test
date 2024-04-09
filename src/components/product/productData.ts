@@ -29,7 +29,7 @@ export const productData: Product[] = [
     minutes:"Hours",
     hoursNumber: 10,
     minutesNumber: 50,
-    heart:"https://svgshare.com/i/15Bt.svg",
+    heart:"heart"
     
   },
   {
@@ -44,7 +44,7 @@ export const productData: Product[] = [
     minutes:"Hours",
     hoursNumber: 10,
     minutesNumber: 50,
-    heart:"https://svgshare.com/i/15Bt.svg",
+    heart:"none"
    
 
   },
@@ -60,7 +60,7 @@ export const productData: Product[] = [
     minutes:"Hours",
     hoursNumber: 10,
     minutesNumber: 50,
-    heart:"https://svgshare.com/i/15Ae.svg",
+    heart:"heart"
     
 
   },
@@ -76,7 +76,7 @@ export const productData: Product[] = [
     minutes:"Hours",
     hoursNumber: 10,
     minutesNumber: 50,
-    heart:"https://svgshare.com/i/15Bt.svg",
+    heart:"none"
    
 
   },
@@ -92,7 +92,7 @@ export const productData: Product[] = [
     minutes:"Hours",
     hoursNumber: 10,
     minutesNumber: 50,
-    heart:"https://svgshare.com/i/15Bt.svg",
+    heart:"none"
     
 
   },

@@ -1,4 +1,4 @@
-import { productData } from "@/data/productData";
+import { productData } from "@/components/product/productData";
 import Image from "next/image";
 import React from "react";
 
@@ -46,10 +46,6 @@ const Product = () => {
                 width={145}
                 height={127}
               />
-              {/* <div className="text-white text-sub_title font-normal rounded-tr-none rounded-br-[75px] rounded-tl-[100px] rounded-bl-none flex justify-center items-center  absolute bottom-0 -right-0 bg-yellow-300 w-[114px] h-[37px]">
-                {items.imgTitle}
-              </div> */}
-
               {items.imgTitle === "Live" ? (
                 <div className="text-white text-sub_title font-normal rounded-tr-none rounded-br-[75px] rounded-tl-[100px] rounded-bl-none flex justify-center items-center  absolute bottom-0 -right-0 bg-[#D20653] w-[114px] h-[37px]">
                   Live auction
@@ -61,16 +57,26 @@ const Product = () => {
               )}
             </div>
 
-            <div className="flex flex-col flex-1  gap-4">
+            <div className="flex flex-col flex-1  gap-2">
               <div className="flex justify-between items-center">
                 <div className="text-sub_header font-normal">{items.title}</div>
-                <Image
-                  src={items.heart}
-                  alt="logo"
-                  className="rounded-3xl "
-                  width={20}
-                  height={17}
-                />
+                {items.heart === "heart" ? (
+                  <Image
+                    src={"https://svgshare.com/i/15Ae.svg"}
+                    alt="logo"
+                    className="rounded-3xl "
+                    width={20}
+                    height={17}
+                  />
+                ) : (
+                  <Image
+                    src={"https://svgshare.com/i/15Bt.svg"}
+                    alt="logo"
+                    className="rounded-3xl "
+                    width={20}
+                    height={17}
+                  />
+                )}
               </div>
               <div className="flex justify-start items-center gap-2">
                 <div className="text-light_Text font-normal">
@@ -80,7 +86,7 @@ const Product = () => {
               </div>
               <div className="flex justify-start items-center gap-2">
                 <div className="text-light_Text font-normal">Lot starts in</div>
-                <div className="flex flex-row  gap-10 justify-between items-center">
+                <div className="flex flex-row  gap-3 justify-between items-center">
                   <button className="w-[105px] h-[40px] text-sub_header rounded-3xl font-bold bg-card_bg text-text_yellow flex flex-row justify-center items-center gap-1">
                     {items.daysNumber}
                     <span className=" text-text_yellow text-main_title">
