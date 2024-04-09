@@ -36,7 +36,7 @@ const Product = () => {
         {productData.map((items) => (
           <div
             key={items.id}
-            className="flex justify-start items-center gap-2 p-3"
+            className="flex justify-start items-start gap-3 p-3"
           >
             <div className="relative ">
               <Image
@@ -51,7 +51,7 @@ const Product = () => {
               </div>
             </div>
 
-            <div className="flex-1">
+            <div className="flex flex-col flex-1  gap-4">
               <div className="flex justify-between items-center">
                 <div className="text-sub_header font-normal">{items.title}</div>
                 <Image
