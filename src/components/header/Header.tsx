@@ -1,23 +1,11 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-
-const navLinks = [
-  {
-    title: "Home",
-    path: "#Home",
-  },
-  {
-    title: "Blog",
-    path: "#Blog",
-  },
-  {
-    title: "Gifts",
-    path: "#Gifts",
-  },
-];
-
+import NavLink from "./NavLink";
 const Header = () => {
+  const [navBarOpen, setNavBarOpen] = useState(false);
+
   return (
     <nav className="bg-white h-[68px] p-4 overflow-hidden">
       <div className="max-w-7xl mx-auto  px-4 sm:px-6 ">
@@ -25,7 +13,20 @@ const Header = () => {
           <div className="flex justify-between items-center">
             {/* Logo */}
             <div className="flex flex-row justify-center items-center gap-5">
-              <div className="flex items-center">
+              <div className="flex items-center justify-center gap-3">
+                <button
+                  className="md:hidden block"
+                  onClick={() => {
+                    setNavBarOpen(true);
+                  }}
+                >
+                  <Image
+                    src={"https://svgshare.com/i/15Bz.svg"}
+                    alt="logo"
+                    width={24}
+                    height={24}
+                  />
+                </button>
                 <Link href={"/"}>
                   <Image
                     src={"https://svgshare.com/i/158f.svg"}
@@ -35,7 +36,7 @@ const Header = () => {
                   />
                 </Link>
               </div>
-              <div className="">
+              <div className="hidden md:block">
                 <ul className="flex space-x-5">
                   <li className="relative">
                     <Link
@@ -65,67 +66,29 @@ const Header = () => {
                 </ul>
               </div>
             </div>
-            {/* Mobile Menu Button (Hamburger) */}
           </div>
-          <div className="flex justify-between items-center ">
-            <div className="flex flex-row justify-center items-center gap-3">
-              <div className="flex items-center justify-between gap-[32px]">
-                <div className="border-r border-yellow-500 pr-[24px] ">
-                  <Link href={"/"}>
-                    <Image
-                      src={"https://svgshare.com/i/159j.svg"}
-                      alt="logo"
-                      className=" text-black drak:text-white"
-                      width={24}
-                      height={24}
-                    />
-                  </Link>
-                </div>
-                <div className=" border-r border-yellow-500 pr-[24px] ">
-                  <Link href={"/"}>
-                    <Image
-                      src={"https://svgshare.com/i/15B5.svg"}
-                      alt="logo"
-                      className=" text-black drak:text-white"
-                      width={24}
-                      height={24}
-                    />
-                  </Link>
-                </div>
-
-                <Link href={"/"}>
-                  <Image
-                    src={"https://svgshare.com/i/15BS.svg"}
-                    alt="logo"
-                    className=" text-black drak:text-white"
-                    width={40}
-                    height={40}
-                  />
-                </Link>
-
-                <button className=" hidden md:flex flex-row justify-evenly items-center bg-gradient-to-r from-[#D20653] to-[#FF951D] w-[172px] h-[40px] rounded-lg">
-                  <Image
-                    src={"https://svgshare.com/i/159k.svg"}
-                    alt="logo"
-                    className=" text-black drak:text-white"
-                    width={24}
-                    height={24}
-                  />
-                  <p className="text-white">Add new product</p>
-                </button>
-                <div className=" flex-row justify-between items-center gap-2 hidden md:flex">
-                  <Image
-                    src={"https://svgshare.com/i/15AQ.svg"}
-                    alt="logo"
-                    className=" text-black drak:text-white border-r border-gray-500 pr-1 "
-                    width={24}
-                    height={24}
-                  />
-                  <div className="font-bold text-sub_header">EN</div>
-                </div>
+          <div className="mobile-menu block md:hidden relative">
+            {!navBarOpen ? (
+              <div className="flex flex-row justify-center items-center gap-3">
+                <button
+                  onClick={() => {
+                    setNavBarOpen(true);
+                  }}
+                  className="text-slate-500 p-3 border dark:border-white border-black rounded-md flex items-center justify-center transition-all duration-300"
+                ></button>
               </div>
-            </div>
+            ) : (
+              <div className="flex flex-row justify-center items-center gap-3">
+                <button
+                  onClick={() => {
+                    setNavBarOpen(false);
+                  }}
+                  className="text-slate-500 p-3 border dark:border-white border-black rounded-md flex items-center justify-center transition-all duration-300"
+                ></button>
+              </div>
+            )}
           </div>
+          <NavLink />
         </div>
       </div>
     </nav>

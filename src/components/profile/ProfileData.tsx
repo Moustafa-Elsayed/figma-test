@@ -45,7 +45,7 @@ const cardData: CardItem[] = [
 
 const ProfileData = () => {
   return (
-    <div className="bg-white p-4 flex flex-col items-start gap-[16px] rounded-2xl w-[407px] mb-5">
+    <div className="bg-white  p-4 flex flex-col items-start gap-[16px] rounded-2xl w-auto mb-5">
       <Image
         src={"https://svgshare.com/i/15AC.svg"}
         alt="logo"

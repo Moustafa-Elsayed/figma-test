@@ -4,7 +4,7 @@ import React from "react";
 
 function QrCode() {
   return (
-    <div className="bg-white p-4 flex flex-col  gap-[16px] rounded-2xl w-[407px]">
+    <div className="bg-white p-4 flex flex-col  gap-[16px] rounded-2xl w-auto">
       <div className="flex flex-row justify-between items-center">
         <div className="text-title font-bold">QR Code</div>
         <div className="flex flex-row gap-4">
