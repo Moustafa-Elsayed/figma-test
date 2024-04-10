@@ -7,7 +7,6 @@ import MenuOverlay from "./MenuOverlay";
 const Header = () => {
   const [navBarOpen, setNavBarOpen] = useState(false);
 
-
   return (
     <nav className="bg-white h-[68px] p-4 overflow-hidden ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -32,21 +31,23 @@ const Header = () => {
                 <Link href={"/"}>
                   <Image
                     src={"https://svgshare.com/i/158f.svg"}
+                    className="md:w-[108px] "
                     alt="logo"
-                    className="w-[90px] h-[34px] md:w-[108px] md:h-[34px] "
-                    width={108}
+                    width={85}
                     height={34}
                   />
                 </Link>
               </div>
             </div>
-          </div>         
+          </div>
           <NavLink />
-        </div> 
-        {navBarOpen && <MenuOverlay setNavBarOpen={setNavBarOpen} navBarOpen={navBarOpen}/>}
+        </div>
+        {navBarOpen && (
+          <MenuOverlay setNavBarOpen={setNavBarOpen} navBarOpen={navBarOpen} />
+        )}
       </div>
     </nav>
   );
 };
 
-export default memo(Header) ;
+export default memo(Header);
