@@ -69,7 +69,7 @@ function QrCode() {
               Download the QR code or share it with your friends.
             </p>
           </div>
-          <div className="self-center w-[300px] md:w-[358px] h-[313px] bg-gray-500 flex justify-center items-center bg-gradient-to-r from-[#D20653] to-[#FF951D] rounded-2xl ">
+          <div className="self-center w-[300px] md:w-[350px] h-[313px] bg-gray-500 flex justify-center items-center bg-gradient-to-r from-[#D20653] to-[#FF951D] rounded-2xl ">
             <div className="p-2 flex flex-col justify-between w-[90%] md:w-[313px] md:h-[278px] items-center rounded-3xl bg-white">
               <Link href={"/"}>
                 <Image

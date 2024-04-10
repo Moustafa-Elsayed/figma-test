@@ -28,14 +28,14 @@ const MenuOverlay: React.FC<MenuOverlayProps> = ({
           </li>
           <li>
             <Link
-              href="/about"
+              href="/"
               className="text-light_Text text-sub_header font-normal"
             >
               Blog
             </Link>
           </li>
           <li>
-            <Link href="/services" className="text-light_Text text-sub_header">
+            <Link href="/" className="text-light_Text text-sub_header">
               Gifts
             </Link>
           </li>

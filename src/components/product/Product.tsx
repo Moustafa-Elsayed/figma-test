@@ -28,10 +28,10 @@ const Product = () => {
               backgroundColor=""
             />
           </div>
-          <button className="md:absolute fixed right-5 md:right-5 top-1/3 md:top-3 flex flex-row justify-evenly items-center bg-gradient-to-r from-[#D20653] to-[#FF951D]  w-[125px] h-[40px] rounded-lg">
+          <button className="md:absolute fixed right-5 md:right-5 top-2/3 md:top-3 flex flex-row justify-evenly items-center bg-gradient-to-r from-[#D20653] to-[#FF951D]  w-[125px] h-[40px] rounded-lg">
             <Image
               src={"https://svgshare.com/i/159k.svg"}
-              alt="logo"
+              alt="logo"s
               className=" text-black drak:text-white"
               width={24}
               height={24}
