@@ -5,7 +5,7 @@ const NavLink = () => {
   return (
     <div className="flex justify-between items-center ">
       <div className="flex flex-row justify-center items-center gap-3">
-        <div className="flex items-center justify-between gap-[32px]">
+        <div className="flex items-center justify-between md:gap-[32px] gap-[16px]">
           <div className="md:border-r md:border-yellow-500 md:pr-[24px] ">
             <Link href={"/"}>
               <Image
@@ -28,7 +28,6 @@ const NavLink = () => {
               />
             </Link>
           </div>
-
           <Link href={"/"}>
             <Image
               src={"https://svgshare.com/i/15BS.svg"}
@@ -38,7 +37,6 @@ const NavLink = () => {
               height={24}
             />
           </Link>
-
           <button className=" hidden md:flex flex-row justify-evenly items-center bg-gradient-to-r from-[#D20653] to-[#FF951D] w-[172px] h-[40px] rounded-lg">
             <Image
               src={"https://svgshare.com/i/159k.svg"}
@@ -65,4 +63,4 @@ const NavLink = () => {
   );
 };
 
-export default memo(NavLink) ;
+export default memo(NavLink);

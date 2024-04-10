@@ -33,14 +33,14 @@ const Header = () => {
                   <Image
                     src={"https://svgshare.com/i/158f.svg"}
                     alt="logo"
+                    className="w-[90px] h-[34px] md:w-[108px] md:h-[34px] "
                     width={108}
                     height={34}
                   />
                 </Link>
               </div>
             </div>
-          </div>
-          
+          </div>         
           <NavLink />
         </div> 
         {navBarOpen && <MenuOverlay setNavBarOpen={setNavBarOpen} navBarOpen={navBarOpen}/>}
