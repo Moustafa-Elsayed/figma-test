@@ -59,7 +59,7 @@ const ProfileData = () => {
         is for Mackeup and Skin Care.
       </div>
 
-      <div className="flex flex-row  justify-between items-center gap-4 flex-wrap">
+      <div className="flex flex-row flex-nowrap md:flex-wrap lg:flex-nowrap  justify-between items-center gap-4  ">
         {cardData.map((items) => (
           <div
             key={items?.id}
